@@ -1,10 +1,16 @@
 @import "@/styles/core/variables";
+@import "@/styles/utils/breakpoints";
 
 .footer__container {
   padding: 10rem 18.4rem;
-  background-image: url("../../../assets/svg/footerbg.svg"), linear-gradient(180deg, #fcfcfe 0%, #eff1f6 100%);;
+  background-image: url("../../../assets/svg/footerbg.svg"),
+    linear-gradient(180deg, #fcfcfe 0%, #eff1f6 100%);
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include media("<=tablet") {
+    padding: 3.2rem;
+  }
 }
 
 .footer__title {
@@ -54,7 +60,7 @@
 
 .footer__base {
   border-top: 1px solid rgba(15, 5, 24, 0.1);
-  padding: 2.4rem 4rem;
+  padding: 2.4rem 0;
 
   li {
     opacity: 0.5;

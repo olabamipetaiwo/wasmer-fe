@@ -1,13 +1,22 @@
 @import "@/styles/core/variables";
+@import "@/styles/utils/breakpoints";
 
 .large {
   padding: 6.4rem;
+
+  @include media("<=tablet") {
+    padding: 2.4rem;
+  }
 
   h1 {
     color: $grey-100;
     font-family: $font-gil-bold;
     font-size: 4.8rem;
     line-height: 140%;
+
+    @include media("<=tablet") {
+      font-size: 3.6rem;
+    }
   }
 
   p {
@@ -17,6 +26,10 @@
     line-height: 140%;
     opacity: 0.7;
     margin-bottom: 6.4rem;
+
+    @include media("<=tablet") {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -57,11 +70,6 @@
     #605de9 315deg,
     #5d2a79 360deg
   );
-
-  // box-shadow: 0 0 100px 15px #c40000, 0 0 20px 7px #ebecca;
-
-  //   box-shadow: 0 0 1px 5px #48abe0, 0 0 20px 7px #ebecca, 0 0 25px 20px #8a2be2,
-  //     0 0 30px 25px #ff1493;
 }
 
 .cta__button {

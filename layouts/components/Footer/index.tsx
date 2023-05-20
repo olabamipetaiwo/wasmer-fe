@@ -33,10 +33,10 @@ const Footer = (): ReactElement => {
       </section>
       <CTA data={get_started} variant="large" />
       <footer className={`flex flex-col justify-between ${styles.footer} `}>
-        <section className="grid grid-cols-2 py-10 ">
+        <section className="grid grid-cols-1 md:grid-cols-2 py-10 gap-y-16 ">
           <div className="flex flex-col items-start  ">
             <LogoIcon className="mb-10" />
-            <p className="w-80 text-left mb-6 opacity-70">
+            <p className="w-full md:w-80 text-left mb-6 opacity-70">
               Making software universally accessible
             </p>
             <ul
@@ -64,7 +64,7 @@ const Footer = (): ReactElement => {
               </li>
             </ul>
           </div>
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8">
             <div
               className={`flex flex-col items-start ${styles.footer__links}`}
             >
