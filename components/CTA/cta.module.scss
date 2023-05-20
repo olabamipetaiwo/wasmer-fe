@@ -1,0 +1,86 @@
+@import "@/styles/core/variables";
+
+.large {
+  padding: 6.4rem;
+
+  h1 {
+    color: $grey-100;
+    font-family: $font-gil-bold;
+    font-size: 4.8rem;
+    line-height: 140%;
+  }
+
+  p {
+    color: $grey-100;
+    font-family: $font-gil-med;
+    font-size: 2.2rem;
+    line-height: 140%;
+    opacity: 0.7;
+    margin-bottom: 6.4rem;
+  }
+}
+
+.small {
+  padding: 4rem 3.2rem;
+
+  p {
+    color: $grey-100;
+    font-family: $font-gil-bold;
+    font-size: 2.8rem;
+    line-height: 140%;
+  }
+
+  .cta__info {
+    color: $grey-500;
+    font-family: $font-gil-med;
+    font-size: 1.6rem;
+    line-height: 140%;
+    opacity: 0.7;
+  }
+}
+
+.cta__container {
+  background-color: $grey-200;
+  color: $grey-100;
+  border-radius: 1.2rem;
+  text-align: left;
+
+  box-shadow: conic-gradient(
+    from -26.31deg at 50% 50%,
+    #605de9 0deg,
+    #ac5ce0 43.12deg,
+    #5d2a79 90deg,
+    #605de9 142.5deg,
+    #ac5ce0 183.75deg,
+    #5d2a79 223.13deg,
+    #ac5ce0 268.13deg,
+    #605de9 315deg,
+    #5d2a79 360deg
+  );
+
+  // box-shadow: 0 0 100px 15px #c40000, 0 0 20px 7px #ebecca;
+
+  //   box-shadow: 0 0 1px 5px #48abe0, 0 0 20px 7px #ebecca, 0 0 25px 20px #8a2be2,
+  //     0 0 30px 25px #ff1493;
+}
+
+.cta__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.1rem;
+  width: 5.4rem;
+  height: 5.4rem;
+  background: #fbfbfc;
+  box-shadow: 0px 36px 366px rgba(255, 31, 37, 0.34);
+  border-radius: 7.3rem;
+  transition: all 0.2s;
+  margin-left: 2rem;
+
+  &:hover {
+    background-color: $grey-100;
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+}

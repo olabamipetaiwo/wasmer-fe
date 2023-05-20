@@ -1,0 +1,68 @@
+@import "@/styles/core/variables";
+
+.footer__container {
+  padding: 10rem 18.4rem;
+  background-image: url("../../../assets/svg/footerbg.svg"), linear-gradient(180deg, #fcfcfe 0%, #eff1f6 100%);;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__title {
+  font-family: $font-gil-bold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 140%;
+  color: $grey-200;
+  margin-bottom: 2.4rem;
+}
+
+.footer {
+  min-height: 30rem;
+  opacity: 0.8;
+  margin-top: 5rem;
+
+  p {
+    color: $grey-200;
+    font-family: $font-gil-med;
+  }
+}
+
+.footer__social__links {
+  li {
+    margin-right: 1.6rem;
+    svg {
+      fill: $grey-200;
+    }
+  }
+}
+
+.footer__links {
+  h4 {
+    font-family: $font-gil-bold;
+    color: $grey-200;
+    margin-bottom: 2.4rem;
+  }
+
+  a {
+    font-family: $font-gil-bold;
+    color: $grey-200;
+    margin-bottom: 1.6rem;
+    opacity: 0.5;
+  }
+}
+
+.footer__base {
+  border-top: 1px solid rgba(15, 5, 24, 0.1);
+  padding: 2.4rem 4rem;
+
+  li {
+    opacity: 0.5;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $grey-200;
+    margin-right: 3.2rem;
+    font-family: $font-gil-bold;
+  }
+}

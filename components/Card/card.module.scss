@@ -1,0 +1,73 @@
+@import "@/styles/core/variables";
+
+.repo__container {
+  //   width: 496px;
+  min-height: 23.6rem;
+  background: #fbfbfc;
+  border: 1px solid rgba(15, 5, 24, 0.2);
+  box-shadow: 0px 8.91428px 38.6286px rgba(35, 16, 68, 0.05),
+    0px 2.6874px 15.7931px rgba(35, 16, 68, 0.05),
+    0px 1.11621px 10.0286px rgba(35, 16, 68, 0.015),
+    0px 0.40371px 7.42857px rgba(35, 16, 68, 0.001);
+  border-radius: 12px;
+  text-align: left;
+  padding: 3.6rem;
+}
+
+.repo__header {
+  margin-bottom: 2rem;
+
+  h2 {
+    font-family: $font-gil-bold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 140%;
+    color: $grey-200;
+  }
+}
+
+.repo__separator {
+  transform: rotate(23deg);
+}
+
+.repo__description {
+  font-family: $font-gil-med;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 140%;
+  color: $dark;
+  opacity: 0.5;
+  text-align: left;
+}
+
+.repo__cta {
+  margin-top: 3rem;
+   display: flex;
+    align-items: center;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    margin-right: 1.9rem;
+
+    svg {
+      stroke: $grey-200;
+      transition: all 0.2s;
+      cursor: pointer;
+      margin-right: 0.9rem;
+
+      &:hover {
+        fill: $grey-200;
+      }
+    }
+
+    p {
+      font-family: $font-gil-med;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 140%;
+    }
+  }
+}

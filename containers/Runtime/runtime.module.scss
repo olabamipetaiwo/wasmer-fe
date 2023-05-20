@@ -1,0 +1,21 @@
+@import "@/styles/core/variables";
+
+.runtime {
+  background-image: url("../../assets/svg/puprleBg.svg"),
+    url("../../assets/svg/purple.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.runtime__container {
+  margin: 6.4rem auto;
+  width: 82.6rem;
+}
+
+.runtime__languages {
+  svg {
+    &:not(:last-of-type) {
+      margin-right:1.8rem;
+    }
+  }
+}

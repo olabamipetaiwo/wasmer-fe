@@ -1,0 +1,29 @@
+$white: #ffffff;
+$black: #000010;
+
+$grey-100:#FAFBFD;
+$grey-200: #0f0518;
+$grey-500: #FBFBFC;
+$dark:#0e061a;
+
+// fonts
+$font-gil: "Gilroy-Regular", sans-serif;
+$font-gil-med: "Gilroy-Medium", sans-serif;
+$font-gil-semi: "Gilroy-Semibold", sans-serif;
+$font-gil-bold: "Gilroy-Bold", sans-serif;
+$font-Zeitung: "Zeitung Mono Pro", sans-serif;
+
+$z-indexes: (
+  "noscript",
+  "preloader",
+  "transition",
+  "modal",
+  "overlay",
+  "nav",
+  "canvas",
+  "menu",
+  "4",
+  "3",
+  "2",
+  "1"
+);

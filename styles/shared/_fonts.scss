@@ -1,0 +1,50 @@
+.headline {
+  font-family: $font-gil-bold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4.4rem;
+  line-height: 140%;
+  color: $dark;
+}
+
+.content {
+  font-family: $font-gil-med;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 140%;
+  text-align: center;
+  color: $dark;
+  opacity: 0.5;
+}
+
+.bold-content {
+  font-family: $font-gil-bold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 140%;
+}
+
+.developer-title {
+  font-family: $font-gil-bold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.developer-headline {
+  font-family: $font-gil-med;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: $grey-200;
+  opacity: 0.5;
+}
+
+.border-y {
+  border-top: 1px solid #0f051825;
+  border-bottom: 1px solid #0f051825;
+}

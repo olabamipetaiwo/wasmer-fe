@@ -1,0 +1,136 @@
+@import "@/styles/core/variables";
+
+.nav__container {
+  padding: 3.2rem;
+}
+
+.nav__item {
+  opacity: 0.5;
+  transition: all 0.2s;
+
+  a {
+    font-family: $font-gil-bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    color: $grey-200;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.nav__auth__btn {
+  font-family: $font-Zeitung;
+  padding: 1rem 2.4rem;
+  background: $grey-200;
+  color: $white;
+  border-radius: 4.1rem;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.nav__search {
+  width: 36rem;
+  height: 40px;
+  padding: 1.2rem 1.7rem;
+  background: rgba(15, 5, 24, 0.05);
+  border-radius: 4px;
+  margin-left: 3.3rem;
+  opacity: 0.5;
+
+  svg {
+    margin-right: 1rem;
+  }
+  input {
+    font-family: $font-gil-med;
+    color: $grey-200;
+    @apply w-full bg-transparent border-none outline-none focus:ring-0 focus:outline-none placeholder-[#979797];
+  }
+}
+
+.dropdown__container {
+  background: #fbfbfc;
+  border-radius: 12px;
+  border: 0.2px solid $grey-200;
+}
+
+.product__item {
+  margin-bottom: 2.4rem;
+  text-align: left;
+
+  figure {
+    width: 52px;
+    height: 52px;
+    background: #0f0518;
+    border-radius: 9999px;
+    margin-right: 2.4rem;
+  }
+
+  h6 {
+    font-family: $font-gil-bold;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.02em;
+    color: #0f0518;
+  }
+
+  p {
+    font-family: $font-gil-med;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: $grey-200;
+    opacity: 0.5;
+  }
+}
+
+.devloper__sdk {
+  background: $grey-200;
+  box-shadow: 0px 8.91428px 38.6286px rgba(35, 16, 68, 0.04),
+    0px 2.6874px 15.7931px rgba(35, 16, 68, 0.0226),
+    0px 1.11621px 10.0286px rgba(35, 16, 68, 0.015),
+    0px 0.40371px 7.42857px rgba(35, 16, 68, 0.001);
+  border-radius: 1.2rem;
+  padding: 2.4rem;
+  margin: 6px;
+
+  h2 {
+    font-family: $font-gil-med;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: $grey-500;
+    opacity: 0.5;
+    text-align: left;
+  }
+
+  ul {
+    li {
+      font-family: $font-gil-bold;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 140%;
+      color: $grey-500;
+      text-align: left;
+
+      &:not(:last-of-type) {
+        margin-right: 2.4rem;
+      }
+    }
+  }
+}
+
+.developer__links {
+  li {
+    text-align: left;
+    font-family: $font-gil-bold;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: $grey-200;
+    text-align: left;
+  }
+}

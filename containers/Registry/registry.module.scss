@@ -1,0 +1,30 @@
+@import "@/styles/core/variables";
+
+.registry {
+  background-image: url("../../assets/svg/puprleBg.svg"),
+    url("../../assets/svg/purple.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.registry__container {
+  margin: 6.4rem auto;
+  width: 82.6rem;
+}
+
+.benefit__item {
+  font-family: $font-gil-bold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 140%;
+  color: $grey-100;
+
+  svg {
+    margin-right: 1.3rem;
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 3.2rem;
+  }
+}

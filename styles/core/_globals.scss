@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+  font-size: calc(100vw / 1440 * 10);
+  width: 100%;
+
+  @include media("<=phone") {
+    font-size: calc(100vw / 550 * 10);
+  }
+
+  @include media("<=375px") {
+    font-size: calc(100vw / 375 * 10);
+  }
+}
+
+html,
+body {
+  overscroll-behavior: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $font-gil, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.35;
+  // font-feature-settings: "case" on;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: linear-gradient(180deg, #fcfcfe 0%, #eff1f6 100%);
+}
