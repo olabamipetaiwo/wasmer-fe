@@ -1,15 +1,18 @@
 @import "@/styles/core/variables";
 @import "@/styles/utils/breakpoints";
 
+
 .header {
   padding: 16rem 0;
 
   @include media("<=tablet") {
-    padding: 6rem 3rem ;
+    padding: 6rem 3rem;
+    padding-top: 16rem;
   }
 
   @include media("<=mobile") {
     padding: 6rem 1rem;
+    padding-top: 16rem;
   }
 
   h1 {
