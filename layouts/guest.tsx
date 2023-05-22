@@ -7,7 +7,7 @@ interface LayoutProps {
 const GuestLayout = ({ children }: LayoutProps) => {
   return (
     <main className={`flex min-h-screen flex-col text-center relative`}>
-      <Menu />
+      {/* <Menu /> */}
       {children}
       <Footer />
     </main>
