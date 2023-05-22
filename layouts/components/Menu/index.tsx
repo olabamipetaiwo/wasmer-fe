@@ -6,7 +6,11 @@ import MenuIcon from "@/assets/svg/menu.svg";
 import CloseIcon from "@/assets/svg/close.svg";
 import MenuBar from "@/layouts/components/Menu/menu";
 import MobileMenu from "@/layouts/components/Menu/mobilemenu";
+import type { MotionProps, Variants } from "framer-motion";
+
 // import { motion, useAnimate } from "framer-motion";
+
+
 
 const Menu = (): ReactElement => {
   const [open, setOpen] = useState<boolean>(false);

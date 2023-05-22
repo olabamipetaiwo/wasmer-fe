@@ -21,8 +21,20 @@ const MobileMenu = ({ isOpened }: IProps) => {
       link: "/Products",
     },
   ];
+
+  const variants = {
+    open: { opacity: 1, scale: 1, y: 0, x: 0 },
+    closed: { opacity: 0, scale: 0.5, y: "50%", x: "-100%" },
+  };
+
   return (
-    <motion.nav className={` absolute top-44 z-20 w-full  `}>
+    <motion.nav
+      initial={{ opacity: 0, scale: 0.5, y: -50 }}
+      animate={isOpened ? "open" : "closed"}
+      variants={variants}
+      transition={{ duration: 0.5 }}
+      className={` absolute top-44 z-20 w-full  `}
+    >
       <section
         className={`${styles.mobile__container} border p-10 flex flex-col`}
       >
