@@ -1,15 +1,28 @@
 @import "@/styles/core/variables";
+@import "@/styles/utils/breakpoints";
 
 .registry {
   background-image: url("../../assets/svg/puprleBg.svg"),
     url("../../assets/svg/purple.svg");
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include media("<=tablet") {
+    padding: 3.2rem;
+  }
+
+  @include media("<=mobile") {
+    padding: 1rem;
+  }
 }
 
 .registry__container {
   margin: 6.4rem auto;
   width: 82.6rem;
+
+  @include media("<=tablet") {
+    width: 100%;
+  }
 }
 
 .benefit__item {

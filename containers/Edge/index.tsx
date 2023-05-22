@@ -42,11 +42,11 @@ const EdgeCloud = (): ReactElement => {
         </figure>
 
         <section className={`flex flex-col`}>
-          <div className="flex items-center justify-between m-10">
+          <div className="flex flex-wrap md:flex-nowrap items-center justify-between m-10 ">
             {feataures.map((_feature: any) => {
               return (
                 <p
-                  className={`flex items-center  ${styles.benefit__item}`}
+                  className={`flex items-center justify-center w-full md:w-auto  ${styles.benefit__item}`}
                   key={_feature.ttle}
                 >
                   {_feature.icon}

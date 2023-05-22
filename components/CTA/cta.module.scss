@@ -36,6 +36,10 @@
 .small {
   padding: 4rem 3.2rem;
 
+  @include media("<=tablet") {
+    padding: 2.4rem;
+  }
+
   p {
     color: $grey-100;
     font-family: $font-gil-bold;

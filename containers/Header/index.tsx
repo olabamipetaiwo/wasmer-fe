@@ -14,7 +14,7 @@ const Header = (): ReactElement => {
     >
       <h1>Run, Publish & Deploy any code – anywhere</h1>
       <section className={`${styles.hero}`}></section>
-      <p className="content mb-12 w-1/2">
+      <p className="content mb-6 md:mb-12 w-3/4 md:w-1/2">
         Serve sandboxed WebAssembly apps anywhere through a single runtime and
         do in days what others do in months.
       </p>

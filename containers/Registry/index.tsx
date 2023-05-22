@@ -8,8 +8,6 @@ import LineIcon from "@/assets/svg/line.svg";
 import PublishIcon from "@/assets/svg/publish.svg";
 import RepoCard from "@/components/Card/Repo";
 
-
-
 const Registry = (): ReactElement => {
   const benefit = {
     title: "",
@@ -31,7 +29,7 @@ const Registry = (): ReactElement => {
         </p>
       </section>
 
-      <section className="grid grid-cols-3 gap-12 my-10">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-12 my-10">
         <RepoCard />
         <RepoCard />
         <RepoCard />

@@ -9,23 +9,22 @@ import DeployIcon from "@/assets/svg/deploy.svg";
 const AppFeatures = (): ReactElement => {
   return (
     <section
-      className={`flex flex-col items-center justify-center  w-full ${styles.features__container}`}
+      className={`flex flex-col items-center justify-center w-full ${styles.features__container}`}
     >
       <p className={`${styles.feature__item}`}>
         Create apps that &nbsp;
-        <Badge title="Run" Icon={<RunIcon />} link="/run" /> &nbsp;
-        everywhere.
+        <Badge title="Run" Icon={<RunIcon />} link="/run" /> &nbsp; everywhere.
       </p>
 
       <p className={`${styles.feature__item}`}>
-        <Badge title="Publish" Icon={<PublishIcon />} /> &nbsp; everywhere and share
-        with the community
+        <Badge title="Publish" Icon={<PublishIcon />} /> &nbsp;and share with
+        the community
       </p>
 
       <p className={`${styles.feature__item}`}>
         and &nbsp;
-        <Badge title="Deploy" Icon={<DeployIcon />} /> &nbsp; to the
-        edge, globally.
+        <Badge title="Deploy" Icon={<DeployIcon />} /> &nbsp; to the edge,
+        globally.
       </p>
     </section>
   );

@@ -5,6 +5,10 @@
   font-size: 4.4rem;
   line-height: 140%;
   color: $dark;
+
+  @include media("<=tablet") {
+    font-size: 3.6rem;
+  }
 }
 
 .content {
@@ -16,6 +20,10 @@
   text-align: center;
   color: $dark;
   opacity: 0.5;
+
+  @include media("<=tablet") {
+    font-size: 2rem;
+  }
 }
 
 .bold-content {
@@ -24,6 +32,10 @@
   font-weight: 600;
   font-size: 2.2rem;
   line-height: 140%;
+
+  @include media("<=tablet") {
+    font-size: 2rem;
+  }
 }
 
 .developer-title {

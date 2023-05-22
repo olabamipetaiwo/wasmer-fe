@@ -1,7 +1,16 @@
 @import "@/styles/core/variables";
+@import "@/styles/utils/breakpoints";
 
 .header {
   padding: 16rem 0;
+
+  @include media("<=tablet") {
+    padding: 6rem 3rem ;
+  }
+
+  @include media("<=mobile") {
+    padding: 6rem 1rem;
+  }
 
   h1 {
     font-family: $font-gil-bold;
@@ -11,6 +20,11 @@
     line-height: 120%;
     color: $dark;
     width: 60rem;
+
+    @include media("<=tablet") {
+      font-size: 4.4rem;
+      width: 90%;
+    }
   }
 }
 
@@ -27,8 +41,10 @@
   background-image: url("../../assets/svg/header.svg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  // height: 33.6rem;
-  // height: 63.6rem;
-  min-height: 50rem;
+  height: 50rem;
   width: 100%;
+
+  @include media("<=tablet") {
+    height: 20rem;
+  }
 }

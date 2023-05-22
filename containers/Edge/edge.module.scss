@@ -1,15 +1,30 @@
 @import "@/styles/core/variables";
+@import "@/styles/utils/breakpoints";
 
 .edge {
   background-image: url("../../assets/svg/puprleBg.svg"),
     url("../../assets/svg/purple.svg");
+
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include media("<=tablet") {
+    padding: 3.2rem;
+    background: linear-gradient(180deg, #fcfcfe 0%, #eff1f6 100%);
+  }
+
+  @include media("<=mobile") {
+    padding: 1rem;
+  }
 }
 
 .edge__container {
   margin: 6.4rem auto;
   width: 82.6rem;
+
+  @include media("<=tablet") {
+    width: 100%;
+  }
 }
 
 .benefit__item {
@@ -26,5 +41,9 @@
 
   &:not(:last-of-type) {
     margin-right: 3.2rem;
+
+    @include media("<=tablet") {
+      margin-right: 0;
+    }
   }
 }

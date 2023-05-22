@@ -1,21 +1,34 @@
 @import "@/styles/core/variables";
+@import "@/styles/utils/breakpoints";
 
 .runtime {
   background-image: url("../../assets/svg/puprleBg.svg"),
     url("../../assets/svg/purple.svg");
   background-size: cover;
   background-repeat: no-repeat;
+
+   @include media("<=tablet") {
+    padding: 3.2rem;
+  }
+
+  @include media("<=mobile") {
+    padding: 1rem;
+  }
 }
 
 .runtime__container {
   margin: 6.4rem auto;
   width: 82.6rem;
+
+  @include media("<=tablet") {
+    width: 100%;
+  }
 }
 
 .runtime__languages {
   svg {
     &:not(:last-of-type) {
-      margin-right:1.8rem;
+      margin-right: 1.8rem;
     }
   }
 }
