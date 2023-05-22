@@ -10,7 +10,7 @@ import DocsIcon from "@/assets/svg/docs.svg";
 
 const MenuBar = () => {
   return (
-    <motion.ul className="border p-10 flex justify-center">
+    <motion.ul className="border p-10  hidden md:flex justify-center">
       <MenuItem text="Home" dropdown={true}>
         <ProducItem />
       </MenuItem>

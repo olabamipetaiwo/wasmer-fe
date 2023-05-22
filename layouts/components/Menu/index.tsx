@@ -12,12 +12,12 @@ const Menu = (): ReactElement => {
       >
         <div className="flex items-center">
           <LogoIcon />
-          <div className={`flex items-center ${styles.nav__search}`}>
+          <div className={`hidden md:flex items-center ${styles.nav__search}`}>
             <SearchIcon />
             <input type="text" placeholder="Search packages, users or apps" />
           </div>
         </div>
-        <div className="flex items-center">
+        <div className="md:flex items-center">
           <div className="dropdownBackground">
             <span className="arrow"></span>
           </div>
